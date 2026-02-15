@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional developer portfolio showcasing projects, skills, and expertise in web development.">
+    <title>Developer Portfolio - Showcasing Web Development Skills</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>John Developer</h1>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my professional portfolio! I am a passionate full-stack web developer with expertise in
+                creating responsive, accessible, and user-friendly web applications. With over 5 years of experience
+                in web development, I specialize in HTML, CSS, JavaScript, and modern frameworks like React.
+            </p>
+            <p>
+                I believe in writing clean, maintainable code and following best practices for accessibility and SEO.
+                When I'm not coding, I enjoy learning new technologies and contributing to open-source projects.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <!-- Project Filter Buttons -->
+            <div class="filter-buttons" style="margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="api">API Integration</button>
+            </div>
+
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <article class="project-item" data-category="fullstack">
+                    <figure>
+                        <img src="https://via.placeholder.com/400x200?text=E-Commerce+Platform"
+                            alt="E-Commerce Platform project showcasing product listings and checkout functionality"
+                            class="project-image" role="button" tabindex="0">
+                    </figure>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>
+                            A fully responsive e-commerce platform built with React and Node.js. Features include
+                            product listings, shopping cart, and secure payment integration.
+                        </p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-item" data-category="frontend">
+                    <figure>
+                        <img src="https://via.placeholder.com/400x200?text=Task+Management+App"
+                            alt="Task Management Application with drag-and-drop functionality and team collaboration features"
+                            class="project-image" role="button" tabindex="0">
+                    </figure>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>
+                            A collaborative task management application with real-time updates, drag-and-drop
+                            functionality, and team collaboration tools.
+                        </p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-item" data-category="api">
+                    <figure>
+                        <img src="https://via.placeholder.com/400x200?text=Weather+Dashboard"
+                            alt="Weather Dashboard displaying real-time weather data and forecasts for multiple locations"
+                            class="project-image" role="button" tabindex="0">
+                    </figure>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>
+                            A responsive weather application providing real-time weather data, forecasts, and
+                            interactive maps using the OpenWeather API.
+                        </p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            <ul class="skills-list">
+                <li>HTML5 & Semantic HTML</li>
+                <li>CSS3 & Responsive Design</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React & Redux</li>
+                <li>Node.js & Express</li>
+                <li>RESTful APIs</li>
+                <li>Database Design (SQL & NoSQL)</li>
+                <li>Git & Version Control</li>
+                <li>Web Accessibility (WCAG)</li>
+                <li>SEO Optimization</li>
+                <li>Testing & Debugging</li>
+                <li>Performance Optimization</li>
+            </ul>
+
+            <h3 style="margin-top: 2rem;">Soft Skills</h3>
+            <ul class="skills-list">
+                <li>Team Collaboration</li>
+                <li>Problem Solving</li>
+                <li>Communication</li>
+                <li>Project Management</li>
+                <li>Attention to Detail</li>
+                <li>Continuous Learning</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>
+                I would love to hear from you! Whether you have a project in mind, want to collaborate, or just want
+                to chat about web development, feel free to reach out using the form below.
+            </p>
+
+            <form method="POST" action="#" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name <span aria-label="required">*</span></label>
+                    <input type="text" id="name" name="name" required aria-required="true" placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span aria-label="required">*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true"
+                        placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject <span aria-label="required">*</span></label>
+                    <input type="text" id="subject" name="subject" required aria-required="true"
+                        placeholder="What is this about?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span aria-label="required">*</span></label>
+                    <textarea id="message" name="message" required aria-required="true"
+                        placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <h3 style="margin-top: 2rem;">Other Ways to Connect</h3>
+            <ul style="list-style: none; padding-left: 0;">
+                <li>
+                    <strong>Email:</strong> <a href="mailto:john@example.com">john@example.com</a>
+                </li>
+                <li>
+                    <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/johndeveloper" target="_blank"
+                        rel="noopener noreferrer">linkedin.com/in/johndeveloper</a>
+                </li>
+                <li>
+                    <strong>GitHub:</strong> <a href="https://github.com/johndeveloper" target="_blank"
+                        rel="noopener noreferrer">github.com/johndeveloper</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 John Developer. All rights reserved.</p>
+        <p>Built with semantic HTML, accessibility, and SEO best practices in mind.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+            <img id="lightbox-image" src="" alt="Project image in lightbox">
+            <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" aria-label="Scroll to top">↑ Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
